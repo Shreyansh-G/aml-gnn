@@ -183,7 +183,7 @@ $env:AML_API_KEY = "a-long-random-secret"
 
 ## Tests and CI
 
-`python -m pytest` runs 36 tests on synthetic data, covering preprocessing, sampling, the model, scoring new datasets, cases and typologies, the report and the API. The GitHub Actions workflow runs the tests and builds the Docker image on every push.
+`python -m pytest` runs 37 tests on synthetic data, covering preprocessing, sampling, the model, scoring new datasets, cases and typologies, the report and the API. The GitHub Actions workflow runs the tests and builds the Docker image on every push.
 
 ## Credits
 
