@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::FutureWarning",
+    "ignore::DeprecationWarning:torch_geometric.*",
+]

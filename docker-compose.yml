@@ -1,0 +1,20 @@
+# REST API on :8000. Needs data/processed/ and artifacts/ filled (prepare + train),
+# and AML_API_KEY in .env (see .env.example).
+#   docker compose up --build
+
+services:
+  api:
+    build: .
+    image: aml-gnn:latest
+    ports: ["8000:8000"]
+    environment:
+      AML_API_KEY: ${AML_API_KEY:?Set AML_API_KEY in .env (see .env.example)}
+    volumes:
+      - ./data/processed:/srv/data/processed:ro
+      - ./artifacts:/srv/artifacts:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      start_period: 120s

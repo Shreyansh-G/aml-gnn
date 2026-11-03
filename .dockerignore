@@ -1,0 +1,14 @@
+.venv/
+.git/
+.github/
+data/
+artifacts/
+runs/
+examples/
+notebooks/
+tests/
+**/__pycache__/
+.pytest_cache/
+*.zip
+*.log
+.env

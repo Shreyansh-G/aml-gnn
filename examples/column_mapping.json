@@ -1,0 +1,12 @@
+{
+  "_comment": "Map each field (left) to the column name in YOUR CSV (right). Required: timestamp, sender_account, receiver_account, and amount_paid or amount_received. Delete lines your data does not have: banks default to a single institution, currency and payment format to 'Unknown', and without is_laundering the report shows scores, alerts and cases only (no accuracy). is_laundering accepts 1/0, true/false or yes/no.",
+  "timestamp": "txn_time",
+  "sender_bank": "sender_bank",
+  "sender_account": "sender_account",
+  "receiver_bank": "receiver_bank",
+  "receiver_account": "receiver_account",
+  "amount_paid": "amount",
+  "payment_currency": "currency",
+  "payment_format": "channel",
+  "is_laundering": "is_suspicious"
+}

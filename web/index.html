@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AML Investigation Center</title>
+  <meta name="description" content="Graph neural network (Multi-PNA) anti-money-laundering detection on 5.08M transactions: alert queue, laundering-ring cases, typology explanation and draft STRs.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js"
+          integrity="sha384-yxKDWWf0wwdUj/gPeuL11czrnKFQROnLgY8ll7En9NYoXibgg3C6NK/UDHNtUgWJ" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"
+          integrity="sha384-/TQbtLCAerC3jgaim+N78RZSDYV7ryeoBCVqTuzRrFec2akfBkHS7ACQ3PQhvMVi" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"
+          integrity="sha384-+VfUPEb0PdtChMwmBcBmykRMDd+v6D/oFmB3rZM/puCMDYcIvF968OimRh4KQY9a" crossorigin="anonymous" defer></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>AML Investigation Center</span>
+        <span class="dataset-tag" id="dataset-tag"></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#/" data-route="overview">Overview</a>
+        <a href="#/alerts" data-route="alerts">Alert queue</a>
+        <a href="#/cases" data-route="cases">Cases</a>
+        <a href="#/accounts" data-route="accounts">Accounts</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"><p class="loading">Loading…</p></main>
+
+  <footer class="footer">
+    <p>Multi-PNA graph neural network on the IBM AMLworld <b>HI-Small</b> benchmark — synthetic data, test period only
+      (scores are out-of-sample). Not real customer data.</p>
+  </footer>
+
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+</body>
+</html>

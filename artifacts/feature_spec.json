@@ -1,0 +1,65 @@
+{
+  "continuous": [
+    "Amount Received",
+    "Amount Paid",
+    "in_port",
+    "out_port"
+  ],
+  "mean": [
+    7.466144100375331,
+    7.462846358043045,
+    0.6069230387301721,
+    1.2832493599177566
+  ],
+  "std": [
+    3.4854345172502263,
+    3.4693769711421063,
+    0.5144140980596434,
+    1.981466775575273
+  ],
+  "categories": {
+    "Receiving Currency": [
+      "Australian Dollar",
+      "Bitcoin",
+      "Brazil Real",
+      "Canadian Dollar",
+      "Euro",
+      "Mexican Peso",
+      "Ruble",
+      "Rupee",
+      "Saudi Riyal",
+      "Shekel",
+      "Swiss Franc",
+      "UK Pound",
+      "US Dollar",
+      "Yen",
+      "Yuan"
+    ],
+    "Payment Currency": [
+      "Australian Dollar",
+      "Bitcoin",
+      "Brazil Real",
+      "Canadian Dollar",
+      "Euro",
+      "Mexican Peso",
+      "Ruble",
+      "Rupee",
+      "Saudi Riyal",
+      "Shekel",
+      "Swiss Franc",
+      "UK Pound",
+      "US Dollar",
+      "Yen",
+      "Yuan"
+    ],
+    "Payment Format": [
+      "ACH",
+      "Bitcoin",
+      "Cash",
+      "Cheque",
+      "Credit Card",
+      "Reinvestment",
+      "Wire"
+    ]
+  }
+}
