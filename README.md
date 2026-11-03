@@ -1,5 +1,7 @@
 # AML-GNN: Graph Neural Network for Anti-Money-Laundering Detection
 
+**Live demo: [aml-gnn-shreyansh-g.netlify.app](https://aml-gnn-shreyansh-g.netlify.app)**
+
 This project detects money-laundering transactions in the IBM AMLworld **HI-Small** dataset (5.08M transactions, 515K accounts) using a **Multi-PNA** graph neural network. The model's scores feed an investigation web app with these pages:
 - an overview with the headline results and comparisons
 - a daily alert queue with its hit rate
